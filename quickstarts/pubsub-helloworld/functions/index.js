@@ -41,7 +41,7 @@ exports.helloPubSub = functions.pubsub.topic('topic-name').onPublish((message) =
  * Cloud Function to be triggered by Pub/Sub that logs a message using the data published to the
  * topic as JSON.
  */
-exports.helloPubSubJson = functions.pubsub.topic('another-topic-name').onPublish((message) => {
+exports.helloPubSubJson = functions.pubsub.topic('another-topic-nameThatIsLongDueToNestedGroups-withSpecificName').onPublish((message) => {
   // [START readJson]
   // Get the `name` attribute of the PubSub message JSON body.
   let name = null;
